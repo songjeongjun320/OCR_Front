@@ -10,14 +10,8 @@ body {
   left: 0;
   top: 0;
 }
-.maroon-block a {
-  position: absolute;
-  right: 10px;
-  top: 10px;
-}
 
 /* No changes below this line */
-
 .login-container {
   position: relative;
   width: 300px;
