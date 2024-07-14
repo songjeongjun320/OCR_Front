@@ -1,81 +1,71 @@
 body {
   font-family: Arial, sans-serif;
-  background-color: #fff;
-  color: #333;
+  background-color: #f8f8f8;
   margin: 0;
   padding: 0;
 }
 
-header {
-  background-color: maroon;
-  color: white;
-  padding: 10px 0;
-  text-align: center;
-}
-
-main {
+.container {
   padding: 20px;
 }
 
-.container-info {
-  display: flex;
-  justify-content: space-around;
-  align-items: flex-start;
-  flex-wrap: wrap;
-}
-
-.info-box {
-  background-color: #f2f2f2;
-  border: 1px solid maroon;
-  border-radius: 5px;
+h1 {
+  text-align: center;
+  background-color: #800000;
+  color: white;
   padding: 10px;
-  margin: 10px;
-  width: calc(25% - 40px);
+  margin: 0;
+}
+
+input[type="text"] {
+  width: 100%;
+  padding: 12px;
+  margin-top: 12px;
   box-sizing: border-box;
-  cursor: pointer;
+  border: 1px solid #800000;
 }
 
-.info-box h2 {
-  color: maroon;
-  margin-top: 0;
-  font-size: 1.2em;
-  border-bottom: 1px solid maroon;
-  padding-bottom: 5px;
+table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 10px;
 }
 
-.details-and-picture {
-  display: flex;
-  align-items: center;
+th, td {
+  border: 1px solid #800000;
+  padding: 2px 5px; /* Further reduced padding */
+  text-align: left;
+}
+
+th {
+  background-color: #800000;
+  color: white;
+}
+
+tr:nth-child(even) {
+  background-color: #f2f2f2;
 }
 
 .picture-box {
-  width: 80px;
-  height: 80px;
+  width: 50px;
+  height: 50px;
+}
+
+.pagination {
+  text-align: center;
+  margin-top: 10px;
+}
+
+button {
+  background-color: #800000;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  cursor: pointer;
+  margin: 5px;
+}
+
+button:disabled {
   background-color: #ccc;
-  margin-left: 10px;
-  border: 1px solid maroon;
-  border-radius: 5px;
-}
-
-.details {
-  flex-grow: 1;
-}
-
-.details p {
-  margin: 5px 0;
-  font-size: 1em;
-}
-.search-container {
-  position: absolute;
-  top: 20px;
-  right: 20px;
-}
-
-.search-container input[type="text"] {
-  width: 250px;
-  padding: 10px;
-  font-size: 16px;
-  border-radius: 5px;
-  border: 1px solid #ccc;
-  box-sizing: border-box;
+  cursor: not-allowed;
 }

@@ -1,203 +1,36 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Container Information</title>
-    <link rel="stylesheet" href="main_pg_style.css" />
-  </head>
-  <body>
-    <header>
-      <h1>Container Information</h1>
-    </header>
-    <main>
-      <div class="search-container">
-        <input
-          type="text"
-          id="searchInput"
-          onkeyup="searchContainer()"
-          placeholder="Search for container number..."
-        />
-      </div>
-      <div class="container-info">
-        <div class="info-box" onclick="showPicture(this)">
-          <h2>Container Number: 123456</h2>
-          <div class="details-and-picture">
-            <div class="details">
-              <p><strong>Time:</strong> 08:00 AM</p>
-              <p><strong>In/Out:</strong> In</p>
-              <p><strong>Container Size:</strong> 20ft</p>
-            </div>
-            <div class="picture-box"></div>
-          </div>
-        </div>
-        <div class="info-box" onclick="showPicture(this)">
-          <h2>Container Number: 789012</h2>
-          <div class="details-and-picture">
-            <div class="details">
-              <p><strong>Time:</strong> 09:15 AM</p>
-              <p><strong>In/Out:</strong> Out</p>
-              <p><strong>Container Size:</strong> 40ft</p>
-            </div>
-            <div class="picture-box"></div>
-          </div>
-        </div>
-        <div class="info-box" onclick="showPicture(this)">
-          <h2>Container Number: 345678</h2>
-          <div class="details-and-picture">
-            <div class="details">
-              <p><strong>Time:</strong> 10:30 AM</p>
-              <p><strong>In/Out:</strong> In</p>
-              <p><strong>Container Size:</strong> 20ft</p>
-            </div>
-            <div class="picture-box"></div>
-          </div>
-        </div>
-        <div class="info-box" onclick="showPicture(this)">
-          <h2>Container Number: 901234</h2>
-          <div class="details-and-picture">
-            <div class="details">
-              <p><strong>Time:</strong> 11:45 AM</p>
-              <p><strong>In/Out:</strong> Out</p>
-              <p><strong>Container Size:</strong> 40ft</p>
-            </div>
-            <div class="picture-box"></div>
-          </div>
-        </div>
-        <div class="info-box" onclick="showPicture(this)">
-          <h2>Container Number: 567890</h2>
-          <div class="details-and-picture">
-            <div class="details">
-              <p><strong>Time:</strong> 01:00 PM</p>
-              <p><strong>In/Out:</strong> In</p>
-              <p><strong>Container Size:</strong> 20ft</p>
-            </div>
-            <div class="picture-box"></div>
-          </div>
-        </div>
-        <div class="info-box" onclick="showPicture(this)">
-          <h2>Container Number: 234567</h2>
-          <div class="details-and-picture">
-            <div class="details">
-              <p><strong>Time:</strong> 02:15 PM</p>
-              <p><strong>In/Out:</strong> Out</p>
-              <p><strong>Container Size:</strong> 40ft</p>
-            </div>
-            <div class="picture-box"></div>
-          </div>
-        </div>
-        <div class="info-box" onclick="showPicture(this)">
-          <h2>Container Number: 678901</h2>
-          <div class="details-and-picture">
-            <div class="details">
-              <p><strong>Time:</strong> 03:30 PM</p>
-              <p><strong>In/Out:</strong> In</p>
-              <p><strong>Container Size:</strong> 20ft</p>
-            </div>
-            <div class="picture-box"></div>
-          </div>
-        </div>
-        <div class="info-box" onclick="showPicture(this)">
-          <h2>Container Number: 345678</h2>
-          <div class="details-and-picture">
-            <div class="details">
-              <p><strong>Time:</strong> 04:45 PM</p>
-              <p><strong>In/Out:</strong> Out</p>
-              <p><strong>Container Size:</strong> 40ft</p>
-            </div>
-            <div class="picture-box"></div>
-          </div>
-        </div>
-        <div class="info-box" onclick="showPicture(this)">
-          <h2>Container Number: 112233</h2>
-          <div class="details-and-picture">
-            <div class="details">
-              <p><strong>Time:</strong> 05:00 PM</p>
-              <p><strong>In/Out:</strong> In</p>
-              <p><strong>Container Size:</strong> 20ft</p>
-            </div>
-            <div class="picture-box"></div>
-          </div>
-        </div>
-        <div class="info-box" onclick="showPicture(this)">
-          <h2>Container Number: 445566</h2>
-          <div class="details-and-picture">
-            <div class="details">
-              <p><strong>Time:</strong> 06:15 PM</p>
-              <p><strong>In/Out:</strong> Out</p>
-              <p><strong>Container Size:</strong> 40ft</p>
-            </div>
-            <div class="picture-box"></div>
-          </div>
-        </div>
-        <div class="info-box" onclick="showPicture(this)">
-          <h2>Container Number: 778899</h2>
-          <div class="details-and-picture">
-            <div class="details">
-              <p><strong>Time:</strong> 07:30 PM</p>
-              <p><strong>In/Out:</strong> In</p>
-              <p><strong>Container Size:</strong> 20ft</p>
-            </div>
-            <div class="picture-box"></div>
-          </div>
-        </div>
-        <div class="info-box" onclick="showPicture(this)">
-          <h2>Container Number: 990011</h2>
-          <div class="details-and-picture">
-            <div class="details">
-              <p><strong>Time:</strong> 08:45 PM</p>
-              <p><strong>In/Out:</strong> Out</p>
-              <p><strong>Container Size:</strong> 40ft</p>
-            </div>
-            <div class="picture-box"></div>
-          </div>
-        </div>
-        <div class="info-box" onclick="showPicture(this)">
-          <h2>Container Number: 223344</h2>
-          <div class="details-and-picture">
-            <div class="details">
-              <p><strong>Time:</strong> 09:00 PM</p>
-              <p><strong>In/Out:</strong> In</p>
-              <p><strong>Container Size:</strong> 20ft</p>
-            </div>
-            <div class="picture-box"></div>
-          </div>
-        </div>
-        <div class="info-box" onclick="showPicture(this)">
-          <h2>Container Number: 556677</h2>
-          <div class="details-and-picture">
-            <div class="details">
-              <p><strong>Time:</strong> 10:15 PM</p>
-              <p><strong>In/Out:</strong> Out</p>
-              <p><strong>Container Size:</strong> 40ft</p>
-            </div>
-            <div class="picture-box"></div>
-          </div>
-        </div>
-        <div class="info-box" onclick="showPicture(this)">
-          <h2>Container Number: 889900</h2>
-          <div class="details-and-picture">
-            <div class="details">
-              <p><strong>Time:</strong> 11:30 PM</p>
-              <p><strong>In/Out:</strong> In</p>
-              <p><strong>Container Size:</strong> 20ft</p>
-            </div>
-            <div class="picture-box"></div>
-          </div>
-        </div>
-        <div class="info-box" onclick="showPicture(this)">
-          <h2>Container Number: 112244</h2>
-          <div class="details-and-picture">
-            <div class="details">
-              <p><strong>Time:</strong> 12:45 AM</p>
-              <p><strong>In/Out:</strong> Out</p>
-              <p><strong>Container Size:</strong> 40ft</p>
-            </div>
-            <div class="picture-box"></div>
-          </div>
-        </div>
-      </div>
-    </main>
-    <script src="main_pg_script.js"></script>
-  </body>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="main_pg_style.css">
+  <title>Container Information</title>
+</head>
+<body>
+  <div class="container">
+    <h1>Container Information</h1>
+    <input type="text" id="searchInput" onkeyup="searchContainer()" placeholder="Search for container number...">
+    <table class="container-info">
+      <thead>
+        <tr>
+          <th>Container Number</th>
+          <th>Date</th>
+          <th>Time</th>
+          <th>In/Out</th>
+          <th>Container Size</th>
+          <th>Driver Name</th>
+          <th>Picture</th>
+        </tr>
+      </thead>
+      <tbody id="tableBody">
+        <!-- Data will be inserted here by JavaScript -->
+      </tbody>
+    </table>
+    <div class="pagination">
+      <button id="prevBtn" onclick="prevPage()">Previous</button>
+      <button id="nextBtn" onclick="nextPage()">Next</button>
+    </div>
+  </div>
+  <script src="main_pg_script.js"></script>
+</body>
 </html>
